@@ -1,0 +1,18 @@
+* FreshRoastSR700
+
+This is a fork of [[https://github.com/roastero/freshroastsr700][freshroastsr700]] with a modification originally
+shared by [[https://github.com/trankin][trankin]] [[https://github.com/trankin/Openroast/releases/tag/v1.2.1.1][here]].
+
+This library can regulate the temperature during your roast by
+cycling the heat setting between /high/ and /low/. Some
+FreshRoast SR700 units don't understand the /low/ setting and so
+end up staying on high all the time, burning your coffee.
+
+With this change, it will instead cycle between /high/ and
+/cool/ and successfully regulate temperature, even with our
+special FreshRoast SR700 units.
+
+See my [[https://github.com/tgdnt/openroast][fork]] of openroast with the requirements.txt file you need
+to install freshroastsr700 from this repo instead of PyPI.
+
+See [[https://github.com/roastero/freshroastsr700][upstream repo]] for more information about freshroastsr700.

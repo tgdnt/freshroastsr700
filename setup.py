@@ -8,7 +8,7 @@ from setuptools import find_packages
 
 
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, 'README.rst')) as f:
+with open(os.path.join(here, 'README.org')) as f:
     long_description = f.read()
 
 # import version number
@@ -20,13 +20,12 @@ with open("./freshroastsr700/version.py") as fp:
 setup(
     name='freshroastsr700',
     version=version['__version__'],
-    description='A Python module to control a FreshRoastSR700 coffee roaster.',
+    description='A modified version of FreshRoastSR700 that cycles heat setting \'cool\' instead of \'low\' to regulate temperature.',
     long_description=long_description,
-    url='https://github.com/Roastero/freshroastsr700',
-    author='Mark Spicer, Caleb Coffee',
+    url='https://github.com/tgdnt/freshroastsr700',
+    author='Mark Spicer, Caleb Coffee, Tom Rankin',
     author_email='mds4680@rit.edu',
-    maintainer='Mark Spicer',
-    maintainer_email='mds4680@rit.edu',
+    maintainer='Tiago Donato',
     license='MIT',
     packages=find_packages(),
     install_requires=[
